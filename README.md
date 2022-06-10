@@ -3,5 +3,5 @@
 
 ### Categories
 
-* [models](capstone-api/app/models)
-* [controllers](capstone-api/app/controllers)
+* [models](app/models)
+* [controllers](app/controllers)
