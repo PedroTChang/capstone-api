@@ -10,16 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_10_185253) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_10_190411) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "book_images", force: :cascade do |t|
-    t.integer "book_id"
-    t.string "url"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "book_trackers", force: :cascade do |t|
     t.integer "user_id"
@@ -38,8 +31,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_10_185253) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "show_images", force: :cascade do |t|
-    t.integer "show_id"
+  create_table "images", force: :cascade do |t|
+    t.integer "book_id"
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
