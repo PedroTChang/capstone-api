@@ -4,4 +4,4 @@
 ### Categories
 
 * [models](#app/models)
-* [models](#app/controllers)
+* [controllers](#app/controllers)
