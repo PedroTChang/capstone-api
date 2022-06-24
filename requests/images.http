@@ -1,0 +1,16 @@
+@jwt = 
+
+### Images Index
+Authorization: Bearer {{ jwt }}
+
+### Images Create
+Authorization: Bearer {{ jwt }}
+
+### Images Show
+Authorization: Bearer {{ jwt }}
+
+### Images Update
+Authorization: Bearer {{ jwt }}
+
+### Images Destroy
+Authorization: Bearer {{ jwt }}

@@ -1,0 +1,16 @@
+@jwt = 
+
+### Trackers Index
+Authorization: Bearer {{ jwt }}
+
+### Trackers Create
+Authorization: Bearer {{ jwt }}
+
+### Trackers Show
+Authorization: Bearer {{ jwt }}
+
+### Trackers Update
+Authorization: Bearer {{ jwt }}
+
+### Trackers Destroy
+Authorization: Bearer {{ jwt }}

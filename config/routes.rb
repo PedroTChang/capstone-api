@@ -6,9 +6,21 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
   
-  get "/shows" => "shows#index"
-  get "/shows/:id" => "shows#show"
+  get "/media" => "media#index"
+  post "/media" => "media#create"
+  get "/media/:id" => "media#show"
+  patch "/media/:id" => "media#update"
+  delete "/media/:id" => "media#destroy"
 
-  get "/books" => "books#index"
-  get "/books/:id" => "books#show"
+  get "/trackers" => "trackers#index"
+  post "/trackers" => "trackers#create"
+  get "/trackers/:id" => "trackers#show"
+  patch "/trackers/:id" => "trackers#update"
+  delete "/trackers/:id" => "trackers#destroy"
+
+  get "/images" => "images#index"
+  post "/images" => "images#create"
+  get "/images/:id" => "images#show"
+  patch "/images/:id" => "images#update"
+  delete "/images/:id" => "images#destroy"
 end

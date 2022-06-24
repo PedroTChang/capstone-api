@@ -1,0 +1,16 @@
+@jwt = 
+
+### Media Index
+Authorization: Bearer {{ jwt }}
+
+### Media Create
+Authorization: Bearer {{ jwt }}
+
+### Media Show
+Authorization: Bearer {{ jwt }}
+
+### Media Update
+Authorization: Bearer {{ jwt }}
+
+### Media Destroy
+Authorization: Bearer {{ jwt }}
