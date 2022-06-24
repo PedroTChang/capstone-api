@@ -1,2 +1,0 @@
-class BookTracker < ApplicationRecord
-end

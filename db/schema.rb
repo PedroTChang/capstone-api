@@ -10,47 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_10_190411) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_24_201026) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "book_trackers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "book_id"
-    t.integer "current_chapter"
-    t.string "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "books", force: :cascade do |t|
-    t.string "name"
-    t.integer "lastest_chapter"
-    t.string "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "images", force: :cascade do |t|
-    t.integer "book_id"
+    t.integer "medium_id"
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "show_trackers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "show_id"
-    t.integer "current_episode"
+  create_table "media", force: :cascade do |t|
+    t.string "name"
+    t.integer "latest"
+    t.string "type"
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "shows", force: :cascade do |t|
-    t.string "name"
-    t.integer "lastest_episode"
-    t.string "type"
+  create_table "trackers", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "medium_id"
+    t.integer "current"
+    t.string "progress"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
