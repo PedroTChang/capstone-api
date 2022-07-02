@@ -29,3 +29,4 @@ Tracker.create!([
   {user_id: 3, medium_id: 8, type: "type", progress: "Completed"},
   {user_id: 2, medium_id: 9, type: "type", progress: "Watching"},
 ])
+
