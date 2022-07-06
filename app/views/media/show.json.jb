@@ -1,0 +1,9 @@
+{
+  id: @medium.id,
+  name: medium.name,
+  latest: medium.latest,
+  type: medium.type,
+  status: medium.status,
+  created_at: @medium.created_at,
+  updated_at: @medium.updated_at
+}

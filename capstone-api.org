@@ -1,0 +1,6 @@
+#+title: Capstone API
+#+DESCRIPTION: Creating an api that can track anime and posts
+#+AUTHOR:  Pedro Tae Young Chang
+
+* TODO
+**

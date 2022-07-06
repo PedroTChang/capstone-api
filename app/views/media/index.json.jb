@@ -1,0 +1,6 @@
+@media.map do |medium|
+  {
+    id: medium.id,
+    url: medium_url(medium, format: :json)
+  }
+end
